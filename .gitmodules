@@ -241,9 +241,6 @@
 [submodule "vendor/msgpack-cpp"]
 	path = vendor/msgpack-cpp
 	url = https://github.com/msgpack/msgpack-c.git
-[submodule "vendor/boost-submodules/boost-preprocessor"]
-	path = vendor/boost-submodules/boost-preprocessor
-	url = https://github.com/boostorg/preprocessor.git
 [submodule "vendor/boost-submodules/boost-filesystem"]
 	path = vendor/boost-submodules/boost-filesystem
 	url = https://github.com/boostorg/filesystem
