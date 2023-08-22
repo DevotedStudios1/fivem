@@ -44,6 +44,8 @@ import { SentryLogProvider } from './services/sentry/sentryLogProvider';
 import { timeout } from 'cfx/utils/async';
 import { LoginPage } from './pages/LoginPage/LoginPage';
 import { shutdownLoadingSplash } from "./utils/loadingSplash";
+import { DevotedPage } from './pages/DevotedPage/DevotedPage';
+import { registerServerPreviewService } from './services/serverPreview/serverPreview.service';
 
 startBrowserApp({
   defineServices(container) {
@@ -91,6 +93,7 @@ startBrowserApp({
     registerMpMenuServersReviewsService(container);
     registerMpMenuServersConnectService(container);
     registerMpMenuLocalhostServerService(container);
+    registerServerPreviewService(container);
   },
 
   beforeRender(container) {
@@ -116,7 +119,7 @@ startBrowserApp({
   render: () => (
     <HashRouter>
       <Routes>
-        <Route index element={<LoginPage />} />
+        <Route index element={<DevotedPage />} />
         <Route path="" element={<MpMenuApp />}>
           <Route index element={<HomePage />} />
 
