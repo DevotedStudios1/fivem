@@ -46,6 +46,7 @@ import { LoginPage } from './pages/LoginPage/LoginPage';
 import { shutdownLoadingSplash } from "./utils/loadingSplash";
 import { DevotedPage } from './pages/DevotedPage/DevotedPage';
 import { registerServerPreviewService } from './services/serverPreview/serverPreview.service';
+import { IServerPreview } from 'cfx/common/services/servers/serverPreview.service';
 
 startBrowserApp({
   defineServices(container) {
