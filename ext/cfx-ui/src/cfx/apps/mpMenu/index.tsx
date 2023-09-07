@@ -120,7 +120,8 @@ startBrowserApp({
   render: () => (
     <HashRouter>
       <Routes>
-        <Route index element={<DevotedPage />} />
+        <Route index element={<LoginPage />} />
+        <Route path="devoted" element={<DevotedPage />} />
         <Route path="" element={<MpMenuApp />}>
           <Route index element={<HomePage />} />
 
